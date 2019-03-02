@@ -1,0 +1,27 @@
+server:
+   port: 7200
+   
+   
+#spring:
+#    application:
+#        name: feedback-service
+#    datasource:
+#        url: jdbc:mysql://localhost:3306/feedback?autoReconnect=true&useSSL=false 
+#        username: root 
+#        password: vengatesanns@freak  
+#    jpa:
+#       hibernate.ddl-auto: update    
+#       show-sql:  true
+#       generate-ddl: false     
+
+
+
+#To locate the Properties from Cloud server not from local property files
+
+
+spring:
+  application:
+    name: feedback-service
+  cloud:
+    config:
+      uri: http://localhost:8888                         #Cloud Server Config  
